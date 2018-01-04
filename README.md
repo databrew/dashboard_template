@@ -1,2 +1,2 @@
-# dashboard_template
-Databrew's dashboard template
+# traveldash
+A travel dashboard for the IFC / World Bank
