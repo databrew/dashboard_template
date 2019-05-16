@@ -1,8 +1,7 @@
 library(shiny)
 library(shinydashboard)
-library(sparkline)
-library(jsonlite)
-library(dplyr)
+library(tidyverse)
+library(ggplot2)
 
 # Function for checking log-in
 check_password <- function(user, password){
