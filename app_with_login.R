@@ -1,8 +1,28 @@
 library(shiny)
 library(shinydashboard)
-library(tidyverse)
 library(ggplot2)
+library(tidyverse)
+library(RPostgreSQL)
 
+# source scripts
+source('credentials_connect.R')
+source('credentials_extract.R')
+
+# define whether creating locally or remotely 
+local <- TRUE
+if(local){
+  credentials <- credentials_extract(credentials_file = 'credentials/credentials_local.yaml', 
+                                     all_in_file = TRUE)
+} else {
+  credentials <- credentials_extract(credentials_file = 'credentials/credentials.yaml', 
+                                     all_in_file = TRUE)
+}
+
+# make sure a db is created in psql called dashboarddb
+# created by CREATE DATABASE dashboarddb
+
+# create a connection object with credentials
+co <- credentials_connect(options_list = credentials)
 # Function for checking log-in
 check_password <- function(user, password){
   message('User/password combination is correct')
@@ -44,7 +64,8 @@ body <- dashboardBody(
     tabItem(
       tabName="main",
       fluidPage(
-        h1('Main page')
+        h1('Main page'),
+        DT::dataTableOutput('user_data')
       )
     ),
     tabItem(
@@ -73,6 +94,20 @@ ui <- dashboardPage(header, sidebar, body, skin="blue")
 
 # Server
 server <- function(input, output) {
+  
+  # read from database only for user selected
+  data <- reactiveValues(user_data = data.frame())
+  
+  # observe log in and get data from database
+  observeEvent(input$submit, {
+    data$user_data <- 
+      # dbReadTable(conn = co, 
+      #             name = 'table1')
+      dbGetQuery(conn = co, 
+                  statement = paste0("SELECT * FROM table1 WHERE person='", 
+                                     input$user, #input$user, 
+                                     "'"))
+  })
   
   # Reactive values
   logged_in <- reactiveVal(value = FALSE)
@@ -168,6 +203,10 @@ server <- function(input, output) {
   observeEvent(input$submit_create_account,{
     add_user(user = input$create_user,
              password = input$create_password)
+  })
+  
+  output$user_data <- DT::renderDataTable({
+    data$user_data
   })
   
 }
