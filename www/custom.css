@@ -1,4 +1,6 @@
-/*! * AdminLTE v2.3.11 * Author: Almsaeed Studio * Website: Almsaeed Studio <http: //almsaeedstudio.com> * License: Open source - MIT * Please visit http: //opensource.org/licenses/MIT for more information!*/
+///////////////////////////////////////////////////////
+/* Databrew Dashboard Template */
+///////////////////////////////////////////////////////
 
 body,html {
     height: 100%
@@ -177,7 +179,10 @@ a:active,a:focus,a:hover {
     z-index: 1030
 }
 
+///////////////////////////////////////////////////////
 /* Colored strip at top of the page*/
+///////////////////////////////////////////////////////
+
 .main-header .navbar {
     -webkit-transition: margin-left .3s ease-in-out;
     -o-transition: margin-left .3s ease-in-out;
@@ -207,7 +212,9 @@ a:active,a:focus,a:hover {
     border: 0}
 }
 
+///////////////////////////////////////////////////////
 /* The toggle button on the header that makes sidebar collapse */
+///////////////////////////////////////////////////////
 
 .main-header .sidebar-toggle {
     float: left;
@@ -236,7 +243,10 @@ a:active,a:focus,a:hover {
     padding: 2px 3px;
     line-height: .9}
 
+///////////////////////////////////////////////////////
 /* The title/logo of the dashboard at the top left corner of page */ 
+///////////////////////////////////////////////////////
+
 .main-header .logo {
     -webkit-transition: width .3s ease-in-out;
     -o-transition: width .3s ease-in-out;
@@ -305,9 +315,9 @@ a:active,a:focus,a:hover {
     color: #97a0b3}
 }
 
-/* ########################### */ 
+///////////////////////////////////////////////////////
 /* Navbar */
-/* ########################### */ 
+///////////////////////////////////////////////////////
 
 .navbar-nav {
     font-family: 'Roboto', sans-serif;
@@ -372,9 +382,9 @@ a:active,a:focus,a:hover {
 .left-side,.main-sidebar {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;                        ///////////////////////////////////////////////////////
     padding-top: 80px;              /* Space between top of sidebar and navbar */
-    width: 230px;
+    width: 230px;                   ///////////////////////////////////////////////////////
     z-index: 810;
     -webkit-transition: -webkit-transform .3s ease-in-out,width .3s ease-in-out;
     -moz-transition: -moz-transform .3s ease-in-out,width .3s ease-in-out;
@@ -412,7 +422,10 @@ a:active,a:focus,a:hover {
     border-color: transparent
 }
 
+///////////////////////////////////////////////////////
 /* Sidebar */
+///////////////////////////////////////////////////////
+
 .sidebar-menu {
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
@@ -982,8 +995,9 @@ background-color: #fff}
 .chart-legend {
     margin: 10px 0}
 
+///////////////////////////////////////////////////////
 /* the label above widgets */
-
+///////////////////////////////////////////////////////
 label {
     color: grey;
     font-weight: 400;
@@ -992,7 +1006,7 @@ label {
 
 ///////////////////////////////////////////////////////
 /* ########## selectInput ######### */
-
+///////////////////////////////////////////////////////
 
 .selectize-control.single  { 
     font-size: 10pt;
@@ -1029,6 +1043,8 @@ label {
 
 ////////////////////////////////////////////////////////
 /* ########## Button ######### */
+///////////////////////////////////////////////////////
+
 .btn {
     border-radius: 3px;
     -webkit-box-shadow: none;
@@ -1401,8 +1417,9 @@ table.text-center,table.text-center td,table.text-center th {
         margin-bottom: 3em;
 	}
 
-////////////////////////////////////////////
+///////////////////////////////////////////////////////
 /* Image */
+///////////////////////////////////////////////////////
 
 img#logo {
     height: 50px;
@@ -1449,7 +1466,10 @@ img#logo {
                       color: rgb(108,108,108);
                       background-color: transparent;
                       }
+
+///////////////////////////////////////////////////////
 /* background */
+///////////////////////////////////////////////////////
 
 /* body */
 .content-wrapper, .right-side {
@@ -1481,7 +1501,9 @@ background-color: #fff;
   background: #FFFFFF;
 }
 
+///////////////////////////////////////////////////////
 /* Slider */
+///////////////////////////////////////////////////////
 .irs-bar {
     background: rgb(28,114,188);
 }
@@ -1493,7 +1515,9 @@ background-color: #fff;
     background-color: rgb(28,114,188);
 }
 
+///////////////////////////////////////////////////////
 /* Footer */
+///////////////////////////////////////////////////////
 footer {
     width: 100%;
     font-size: 0.8em;
@@ -1521,8 +1545,9 @@ footer ul{
 				display: inline-block;
 			}
 
-
+///////////////////////////////////////////////////////
 /* Icon */
+///////////////////////////////////////////////////////
 
 	.icon {
 		text-decoration: none;
