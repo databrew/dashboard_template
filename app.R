@@ -83,7 +83,7 @@ ui <- dashboardPage(
       tabName = 'about',
       fluidPage(
         fluidRow(
-          div(img(src='www/logo.png', align = "center"), style="text-align: center;"),
+          div(img(src='logo_clear.png', align = "center"), style="text-align: center;"),
           h4('Built in partnership with ',
              a(href = 'http://databrew.cc',
                target='_blank', 'Databrew'),

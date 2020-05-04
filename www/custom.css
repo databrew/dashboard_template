@@ -141,7 +141,7 @@ body.hold-transition .content-wrapper,body.hold-transition .left-side,body.hold-
     font-size: 18pt;
     color: #fff;
     text-transform: uppercase;
-    background-color: rgb(21,47,74); 
+    background-color: #393433; 
     padding-left: 8px;
     padding-right: 8px;
     margin-right: 20%;
@@ -179,9 +179,7 @@ a:active,a:focus,a:hover {
     z-index: 1030
 }
 
-///////////////////////////////////////////////////////
 /* Colored strip at top of the page*/
-///////////////////////////////////////////////////////
 
 .main-header .navbar {
     -webkit-transition: margin-left .3s ease-in-out;
@@ -212,9 +210,7 @@ a:active,a:focus,a:hover {
     border: 0}
 }
 
-///////////////////////////////////////////////////////
 /* The toggle button on the header that makes sidebar collapse */
-///////////////////////////////////////////////////////
 
 .main-header .sidebar-toggle {
     float: left;
@@ -243,9 +239,7 @@ a:active,a:focus,a:hover {
     padding: 2px 3px;
     line-height: .9}
 
-///////////////////////////////////////////////////////
 /* The title/logo of the dashboard at the top left corner of page */ 
-///////////////////////////////////////////////////////
 
 .main-header .logo {
     -webkit-transition: width .3s ease-in-out;
@@ -315,9 +309,8 @@ a:active,a:focus,a:hover {
     color: #97a0b3}
 }
 
-///////////////////////////////////////////////////////
+
 /* Navbar */
-///////////////////////////////////////////////////////
 
 .navbar-nav {
     font-family: 'Roboto', sans-serif;
@@ -382,9 +375,9 @@ a:active,a:focus,a:hover {
 .left-side,.main-sidebar {
     position: absolute;
     top: 0;
-    left: 0;                        ///////////////////////////////////////////////////////
+    left: 0;                        
     padding-top: 80px;              /* Space between top of sidebar and navbar */
-    width: 230px;                   ///////////////////////////////////////////////////////
+    width: 230px;                   
     z-index: 810;
     -webkit-transition: -webkit-transform .3s ease-in-out,width .3s ease-in-out;
     -moz-transition: -moz-transform .3s ease-in-out,width .3s ease-in-out;
@@ -422,9 +415,9 @@ a:active,a:focus,a:hover {
     border-color: transparent
 }
 
-///////////////////////////////////////////////////////
+
 /* Sidebar */
-///////////////////////////////////////////////////////
+
 
 .sidebar-menu {
     font-size: 1em;
@@ -450,28 +443,11 @@ a:active,a:focus,a:hover {
     display: block}
 .sidebar-menu>li>a>.fa,.sidebar-menu>li>a>.glyphicon,.sidebar-menu>li>a>.ion {
     width: 20px}
-.sidebar-menu>li .badge,.sidebar-menu>li .label {
-    margin-right: 5px}
-.sidebar-menu>li .badge {
-    margin-top: 3px}
+
 .sidebar-menu li.header {
     padding: 10px 25px 10px 15px;
     font-size: 14px}
-.sidebar-menu li>a>.fa-angle-left,.sidebar-menu li>a>.pull-right-container>.fa-angle-left {
-    width: auto;
-    height: auto;
-    padding: 0;
-    margin-right: 10px}
-.sidebar-menu li>a>.fa-angle-left {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    margin-top: -8px}
-.sidebar-menu li.active>a>.fa-angle-left,.sidebar-menu li.active>a>.pull-right-container>.fa-angle-left {
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg)}
+
 .sidebar-menu li.active>.treeview-menu {
     display: block}
 .sidebar-menu .treeview-menu {
@@ -488,10 +464,7 @@ a:active,a:focus,a:hover {
     padding: 5px 5px 5px 15px;
     display: block;
     font-size: 14px}
-.sidebar-menu .treeview-menu>li>a>.fa,.sidebar-menu .treeview-menu>li>a>.glyphicon,.sidebar-menu .treeview-menu>li>a>.ion {
-    width: 20px}
-.sidebar-menu .treeview-menu>li>a>.fa-angle-down,.sidebar-menu .treeview-menu>li>a>.fa-angle-left,.sidebar-menu .treeview-menu>li>a>.pull-right-container>.fa-angle-down,.sidebar-menu .treeview-menu>li>a>.pull-right-container>.fa-angle-left {
-    width: auto}
+
 @media (min-width: 768px) {
     .sidebar-mini.sidebar-collapse .content-wrapper,.sidebar-mini.sidebar-collapse .main-footer,.sidebar-mini.sidebar-collapse .right-side {
     margin-left: 50px!important;
@@ -509,17 +482,7 @@ a:active,a:focus,a:hover {
     margin-right: 0}
 .sidebar-mini.sidebar-collapse .sidebar-menu>li>a>span {
     border-top-right-radius: 4px}
-.sidebar-mini.sidebar-collapse .sidebar-menu>li: not(.treeview)>a>span {
-    border-bottom-right-radius: 4px}
-.sidebar-mini.sidebar-collapse .sidebar-menu>li>.treeview-menu {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom-right-radius: 4px}
-.sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>.treeview-menu,.sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>a>span: not(.pull-right) {
-    display: block!important;
-    position: absolute;
-    width: 180px;
-    left: 50px}
+
 .sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>a>span {
     top: 0;
     margin-left: -3px;
@@ -534,9 +497,7 @@ a:active,a:focus,a:hover {
     z-index: 900}
 .sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>a>.pull-right-container>.label: not(: first-of-type) {
     display: none}
-.sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>.treeview-menu {
-    top: 44px;
-    margin-left: 0}
+
 .sidebar-mini.sidebar-collapse .main-sidebar .user-panel>.info,.sidebar-mini.sidebar-collapse .sidebar-form,.sidebar-mini.sidebar-collapse .sidebar-menu li.header,.sidebar-mini.sidebar-collapse .sidebar-menu>li>.treeview-menu,.sidebar-mini.sidebar-collapse .sidebar-menu>li>a>.pull-right,.sidebar-mini.sidebar-collapse .sidebar-menu>li>a>span {
     display: none!important;
     -webkit-transform: translateZ(0)}
@@ -798,7 +759,7 @@ background-color: #fff}
     margin-top: 50px;
     margin-bottom: 0px;
     border: none;
-    background: rgb(26,51,95);
+    background: #393433;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -995,18 +956,17 @@ background-color: #fff}
 .chart-legend {
     margin: 10px 0}
 
-///////////////////////////////////////////////////////
+
 /* the label above widgets */
-///////////////////////////////////////////////////////
+
 label {
     color: grey;
     font-weight: 400;
     font-size: 12pt;
 }
 
-///////////////////////////////////////////////////////
+
 /* ########## selectInput ######### */
-///////////////////////////////////////////////////////
 
 .selectize-control.single  { 
     font-size: 10pt;
@@ -1041,9 +1001,8 @@ label {
         background-color: darkgrey;
 	}
 
-////////////////////////////////////////////////////////
+
 /* ########## Button ######### */
-///////////////////////////////////////////////////////
 
 .btn {
     border-radius: 3px;
@@ -1091,16 +1050,16 @@ label {
     margin: 12px;
 }
 .btn-default.hover,.btn-default:active,.btn-default:hover {
-    background-color: rgb(108,108,108);
-    color: #fff;
-    border-color: #fff;
+    background-color: #fff;
+    color: rgb(108,108,108);
+    border-color: rgb(108,108,108);
     padding: 10px 16px;
     margin: 12px;
 }
 }
 .btn-primary {
-    background-color: rgb(26,51,95);
-    border-color: rgb(26,51,95)}
+    background-color: #393433;
+    border-color: #393433}
 .btn-primary.hover,.btn-primary:active,.btn-primary:hover {
     background-color: rgb(99,144,178)}
 .btn-success {
@@ -1417,9 +1376,7 @@ table.text-center,table.text-center td,table.text-center th {
         margin-bottom: 3em;
 	}
 
-///////////////////////////////////////////////////////
 /* Image */
-///////////////////////////////////////////////////////
 
 img#logo {
     height: 50px;
@@ -1447,7 +1404,7 @@ img#logo {
 
 /* active selected tab in the sidebarmenu */
 .skin-blue .main-sidebar .sidebar .sidebar-menu .active a{
-                      background-color: rgb(26,51,95);
+                      background-color: #393433;
                       color: #FFFFFF;
                       }
 
@@ -1459,7 +1416,7 @@ img#logo {
 
 /* other links in the sidebarmenu when hovered */
  .skin-blue .main-sidebar .sidebar .sidebar-menu a:hover{
-                      background-color: rgb(26,51,95);
+                      background-color: #393433;
                       }
 /* toggle button when hovered  */
  .skin-blue .main-header .navbar .sidebar-toggle:hover{
@@ -1467,9 +1424,7 @@ img#logo {
                       background-color: transparent;
                       }
 
-///////////////////////////////////////////////////////
 /* background */
-///////////////////////////////////////////////////////
 
 /* body */
 .content-wrapper, .right-side {
@@ -1501,9 +1456,9 @@ background-color: #fff;
   background: #FFFFFF;
 }
 
-///////////////////////////////////////////////////////
+
 /* Slider */
-///////////////////////////////////////////////////////
+
 .irs-bar {
     background: rgb(28,114,188);
 }
@@ -1515,9 +1470,9 @@ background-color: #fff;
     background-color: rgb(28,114,188);
 }
 
-///////////////////////////////////////////////////////
+
 /* Footer */
-///////////////////////////////////////////////////////
+
 footer {
     width: 100%;
     font-size: 0.8em;
@@ -1545,9 +1500,9 @@ footer ul{
 				display: inline-block;
 			}
 
-///////////////////////////////////////////////////////
+
 /* Icon */
-///////////////////////////////////////////////////////
+
 
 	.icon {
 		text-decoration: none;
