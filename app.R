@@ -1,6 +1,5 @@
 library(shiny)
 library(shinydashboard)
-library(sparkline)
 library(jsonlite)
 library(dplyr)
 
